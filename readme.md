@@ -1,6 +1,6 @@
-## Plotloy Data Visualization Project with Flask
+# PLOTLY DATA VISUALIZATION PROJECT WITH FLASK
 
-### Usage
+## USAGE
 
 1. Run the Flask application:
 
@@ -12,14 +12,14 @@ python run.py
 
 3. Explore and interact with the visualizations.
 
-### Dependencies
+## DEPENDENCIES
 
 - Pandas
 - Plotly
 - JSON
 - Flask
 
-### Project Structure
+## PROJECT STRUCTURE
 
 - 'run.py': Flask application script
 - 'templates/': HTML templates for the web application
@@ -28,7 +28,7 @@ python run.py
 
 Feel free to customize the project structure based on your preferences.
 
-### Contributing
+## CONTRIBUTING
 
 1. Fork the repository.
 2. Create a new branch: git checkout -b feature-name.
@@ -36,6 +36,6 @@ Feel free to customize the project structure based on your preferences.
 4. Push to the branch: git push origin feature-name.
 5. Submit a pull request.
 
-### Other Comments
+## OTHER COMMENTS
 
 Happy Coding!
