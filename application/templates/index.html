@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="site-header-logo">
+    <h1 class="text-center">
+        Rize Reviews Chart Graph
+    </h1>
+</div>
+
+<div class="row p-4">
+    <div class="card ml-auto mb-4 mr-auto" style="width: 90%;" data-aos="fade-right">
+        <div class="card-body">
+            <div id="chart1"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+
+    <div class="card ml-auto mb-4 mr-auto" style="width: 90%;" data-aos="fade-left">
+        <div class="card-body">
+            <div id="chart2"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+
+    <div class="card ml-auto mb-4 mr-auto" style="width: 90%;" data-aos="slide-up">
+        <div class="card-body">
+            <div id="chart3"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- plotly CDN -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    var graph1 = {{ graph1JSON | safe }}
+    Plotly.plot("chart1", graph1, {})
+
+    var graph2 = {{ graph2JSON | safe }}
+    Plotly.plot("chart2", graph2, {})
+
+    var graph3 = {{ graph3JSON | safe }}
+    Plotly.plot("chart3", graph3, {})
+</script>
+{% endblock %}
